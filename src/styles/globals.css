@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --textColor: rgb(51 65 85);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,3 +26,5 @@ body {
     text-wrap: balance;
   }
 }
+
+
