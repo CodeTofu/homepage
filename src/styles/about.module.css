@@ -17,7 +17,6 @@
   display: flex;
   gap: 3rem;
   cursor: pointer;
-  /* font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; */
 }
 
 .navbar a {
@@ -39,5 +38,4 @@
   flex-direction: column; /* 垂直排列内容 */
   justify-content: center; /* 垂直居中 */
   align-items: center; /* 水平居中 */
-  background-color: #f9f9f9; /* 可选：设置背景色 */
 }

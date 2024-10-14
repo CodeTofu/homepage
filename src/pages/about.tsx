@@ -1,9 +1,12 @@
 // src/pages/about.js
 import Head from 'next/head';
 import styles from '../styles/about.module.css';
+//  引入 OrbitingCircles
+import OrbitingCirclesDemo from '../components/demo/OrbitingCircles';
+
 
 export default function About() {
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({
@@ -15,13 +18,12 @@ export default function About() {
 
   return (
     <>
-      <Head>
-        <title>About Me</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+        <Head>
+          <link rel="icon" href="/tofu.ico" /> {/* 设置图标 */}
+          <title>Tofu</title>
+        </Head>
       <nav className={styles.navbar}>
         <ul>
-          {/* 删除 href="#"，仅使用 onClick 处理点击事件 */}
           <li><a onClick={() => scrollToSection('introduction')}>个人介绍</a></li>
           <li><a onClick={() => scrollToSection('tech-stack')}>技术栈</a></li>
           <li><a onClick={() => scrollToSection('work-experience')}>工作经历</a></li>
@@ -30,8 +32,7 @@ export default function About() {
       </nav>
       <main className={styles.main}>
         <section id="introduction" className={styles.section}>
-          <h2>Code</h2>
-          <p>这里是个人介绍的内容，详细描述你的背景、教育和职业生涯等。</p>
+           <OrbitingCirclesDemo />
         </section>
         <section id="tech-stack" className={styles.section}>
           <h2>技术栈</h2>
