@@ -1,9 +1,7 @@
 // src/pages/about.js
 import Head from 'next/head';
 import styles from '../styles/about.module.css';
-//  引入 OrbitingCircles
-import OrbitingCirclesDemo from '../components/demo/OrbitingCircles';
-
+import Person from '../components/person'
 
 export default function About() {
   const scrollToSection = (id: string) => {
@@ -32,7 +30,7 @@ export default function About() {
       </nav>
       <main className={styles.main}>
         <section id="introduction" className={styles.section}>
-           <OrbitingCirclesDemo />
+          <Person />
         </section>
         <section id="tech-stack" className={styles.section}>
           <h2>技术栈</h2>
