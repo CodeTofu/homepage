@@ -1,9 +1,9 @@
 "use client";
 
 //  引入 OrbitingCircles
-import OrbitingCirclesDemo from './components/OrbitingCircles';
+import OrbitingCirclesDemo from './components/orbiting-circles-item';
 //   引入 ThreeDCard
-import ThreeDCard from './components/ThreeDCard';
+import ThreeDCard from './components/3d-card-item';
 
 
 export default function Person() {

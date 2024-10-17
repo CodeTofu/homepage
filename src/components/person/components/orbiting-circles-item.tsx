@@ -1,7 +1,6 @@
 import OrbitingCircles from "../../ui/orbiting-circles";
 import Image from 'next/image';
-import ThreeDCard from './ThreeDCard';
-export default function OrbitingCirclesDemo() {
+export default function OrbitingCirclesItem() {
   return (
     <div className="absolute top-0 left-0 flex h-[900px] w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-background ">
       <OrbitingCircles

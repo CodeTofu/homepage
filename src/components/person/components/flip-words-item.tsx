@@ -1,7 +1,7 @@
 import React from "react";
 import { FlipWords } from "../../ui/flip-words";
 
-export default function FlipWordsDemo() {
+export default function FlipWordsItem() {
   const name = ["Tofu", "豆腐"];
   const profession = ["A front end engineer", "一名前端工程师"];
   return (
