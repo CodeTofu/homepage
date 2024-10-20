@@ -1,4 +1,4 @@
-import OrbitingCircles from "../../ui/orbiting-circles";
+import OrbitingCircles from "@/components/ui/orbiting-circles";
 import Image from 'next/image';
 export default function OrbitingCirclesItem() {
   return (

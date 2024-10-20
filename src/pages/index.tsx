@@ -1,8 +1,9 @@
 // src/pages/about.js
 import Head from 'next/head';
-import styles from '../styles/about.module.css';
-import Person from '../components/person'
-import Books from '../components/books'
+import styles from '../styles/index.module.css';
+import ContentBlock from "@/components/layout/content-block";
+import Person from './business/person'
+import Books from './business/books'
 export default function About() {
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
@@ -29,20 +30,20 @@ export default function About() {
         </ul>
       </nav>
       <main className={styles.main}>
-        <section id="introduction" className={styles.section}>
+        <ContentBlock id="introduction" >
           <Person />
-        </section>
-        <section id="tech-stack" className={styles.section}>
+        </ContentBlock>
+        <ContentBlock id="tech-stack" >
            <Books/>
-        </section>
-        <section id="work-experience" className={styles.section}>
+        </ContentBlock>
+        <ContentBlock id="work-experience" >
           <h2>工作经历</h2>
           <p>在这里分享你的工作经历，包括公司名称、职位和工作内容等。</p>
-        </section>
-        <section id="hobbies" className={styles.section}>
+        </ContentBlock>
+        <ContentBlock id="hobbies" >
           <h2>爱好</h2>
           <p>在这里描述你的爱好和兴趣，例如阅读、旅行、运动等。</p>
-        </section>
+        </ContentBlock>
       </main>
     </>
   );

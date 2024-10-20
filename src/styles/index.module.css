@@ -28,7 +28,4 @@
   color: var(--textColor);
 }
 
-.section {
-  min-height: 75vh; /* 设置每个板块的高度为 75vh */
-}
 
